@@ -1,208 +1,218 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRICKO - المحاكي الكلاسيكي الأصلي</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        /* نظام الألوان والمظهر الكلاسيكي لروبلوكس القديمة */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #E3E3E3; /* الرمادي الفاتح الكلاسيكي */
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE — المتجر الفاخر | تحف مختارة بعناية</title>
+  <meta name="description" content="متجر LUXE الفاخر: ساعات، مجوهرات، عطور، وإلكترونيات راقية بتجربة تسوق تفاعلية استثنائية.">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-        /* شريط التنقيب العلوي الأصلي (Header) */
-        .roblox-header {
-            background: linear-gradient(to bottom, #0055B3, #003366); /* الأزرق التدرجي الشهير */
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #002244;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+  <!-- خطوط فاخرة -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
-        .logo-container img {
-            height: 45px;
-            vertical-align: middle;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px 10px;
-            border-radius: 3px;
-            transition: background 0.2s;
-        }
-
-        .nav-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* الحاوية الرئيسية للمحتوى */
-        .main-container {
-            max-width: 1000px;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border: 1px solid #A0A0A0;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        /* لوحة الترحيب الإعلانية الكلاسيكية */
-        .banner-box {
-            background: #F2F2F2;
-            border: 1px dashed #0055B3;
-            padding: 20px;
-            border-radius: 4px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .banner-box h1 {
-            margin: 0 0 10px 0;
-            color: #003366;
-            font-size: 28px;
-        }
-
-        /* قسم التحميل والبطاقات الاستعراضية */
-        .download-section {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            background: #F9F9F9;
-            padding: 20px;
-            border: 1px solid #E0E0E0;
-            border-radius: 4px;
-        }
-
-        .client-preview {
-            flex: 1;
-            text-align: center;
-        }
-
-        .client-preview img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            border: 1px solid #CCC;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-
-        .download-info {
-            flex: 1;
-        }
-
-        .download-info h2 {
-            margin: 0 0 15px 0;
-            color: #333;
-            font-size: 22px;
-        }
-
-        .download-info p {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        /* زر التحميل الأخضر الضخم التدرجي المميز لروبلوكس */
-        .btn-download {
-            display: inline-block;
-            background: linear-gradient(to bottom, #02A802, #017001); /* الأخضر الكلاسيكي لزر Play */
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 12px 35px;
-            border-radius: 6px;
-            border: 1px solid #014F01;
-            box-shadow: 0 3px 0 #014F01, 0 4px 6px rgba(0,0,0,0.2);
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-            cursor: pointer;
-            transition: all 0.1s;
-        }
-
-        .btn-download:active {
-            transform: translateY(3px);
-            box-shadow: 0 0px 0 #014F01, 0 2px 3px rgba(0,0,0,0.2);
-        }/* التذييل السفلي القانوني المبرمج لسلامة الحقوق */
-        .roblox-footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #DDD;
-            font-size: 12px;
-            color: #777;
-        }
-
-        .roblox-footer a {
-            color: #0055B3;
-            text-decoration: none;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- شريط التنقيب العلوي -->
-    <header class="roblox-header">
-        <div class="logo-container">
-            <!-- يستدعي صورة اللوجو المستطيلة الخاصة بك تلقائياً -->
-            <img src="img/logo.png" alt="BRICKO LOGO">
+  <!-- خلفيات متحركة -->
+  <div class="bg-fx"></div>
+  <canvas id="particles"></canvas>
+  <div class="scroll-progress" id="progress"></div>
+
+  <!-- ================= الهيدر ================= -->
+  <header>
+    <div class="logo" onclick="scrollTo({top:0,behavior:'smooth'})">LUXE<span>متجر التحف</span></div>
+
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#shop">المتجر</a></li>
+        <li><a href="#features">لماذا نحن</a></li>
+        <li><a href="#newsletter">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
+      <button class="icon-btn" id="cartBtn" aria-label="سلة التسوق">
+        🛒
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= الهيرو ================= -->
+  <section class="hero" id="home">
+    <div class="hero-badge">✦ تشكيلة موسم ٢٠٢٦ وصلت حديثاً ✦</div>
+    <h1>الفخامة ليست خياراً<br>بل أسلوب حياة</h1>
+    <p class="sub">
+      اكتشف تحفاً مختارة بعناية من ساعات ومجوهرات وعطور نادرة —
+      تجربة تسوق مصممة لتُبهر حواسك، من أول نظرة حتى لحظة الوصول.
+    </p>
+    <div class="hero-cta">
+      <a href="#shop" class="btn btn-gold">تسوّق الآن</a>
+      <a href="#features" class="btn btn-ghost">اكتشف المزيد</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><b data-count="12000">0</b><span>عميل سعيد</span></div>
+      <div class="stat"><b data-count="350" data-suffix="+">0</b><span>قطعة حصرية</span></div>
+      <div class="stat"><b data-count="98" data-suffix="%">0</b><span>رضا العملاء</span></div>
+      <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>دعم فاخر</span></div>
+    </div>
+
+    <div class="scroll-hint">⌄</div>
+  </section>
+
+  <!-- ================= المتجر ================= -->
+  <section class="block" id="shop">
+    <div class="section-head reveal">
+      <div class="kicker">The Collection</div>
+      <h2>تشكيلة المتجر</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="toolbar reveal">
+      <div class="search-box">
+        <input type="text" id="search" placeholder="ابحث عن ساعة، عطر، مجوهرة..." autocomplete="off">
+        <span class="s-icon">🔍</span>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <div class="no-results" id="noResults">😔 لا توجد نتائج مطابقة لبحثك... جرّب كلمة أخرى.</div>
+  </section>
+
+  <!-- ================= المميزات ================= -->
+  <section class="block" id="features">
+    <div class="section-head reveal">
+      <div class="kicker">Why LUXE</div>
+      <h2>لماذا يختارنا عشّاق الفخامة؟</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="features">
+      <div class="feature reveal">
+        <span class="f-icon">🚚</span>
+        <h3>توصيل سريع ومؤمّن</h3>
+        <p>شحن مجاني للطلبات فوق ٣٬٠٠٠ ر.س مع تغليف مخملي وتأمين كامل على كل قطعة.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="f-icon">💎</span>
+        <h3>أصالة مضمونة ١٠٠٪</h3>
+        <p>كل قطعة تحمل شهادة أصالة مرقّمة وخاضعة لفحص خبراء معتمدين دولياً.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="f-icon">🔄</span>
+        <h3>استرجاع خلال ٣٠ يوماً</h3>
+        <p>لم تعجبك القطعة؟ أعدها بحالتها الأصلية واسترد قيمتها كاملة دون أسئلة.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="f-icon">🎁</span>
+        <h3>تغليف هدايا ملكي</h3>
+        <p>علب فاخرة بشريط حريري وبطاقة إهداء مكتوبة بخط اليد — مجاناً مع كل طلب.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= النشرة البريدية ================= -->
+  <section class="block" id="newsletter">
+    <div class="newsletter reveal">
+      <div class="kicker" style="color:var(--gold);letter-spacing:6px;font-size:13px;">VIP ACCESS</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(24px,4vw,36px);margin-top:10px;background:linear-gradient(120deg,#fff,var(--gold-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">انضم إلى نادي النخبة</h2>
+      <p style="color:var(--muted);margin-top:12px;line-height:2;">كن أول من يعرف بالإصدارات الحصرية والعروض الخاصة قبل الجميع.</p>
+      <form id="newsForm">
+        <input type="email" placeholder="بريدك الإلكتروني الفاخر..." required>
+        <button type="submit" class="btn btn-gold">اشترك الآن ✦</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= التذييل ================= -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="logo">LUXE<span>متجر التحف</span></div>
+        <p style="color:var(--muted);font-size:14px;margin-top:14px;max-width:320px;line-height:2;">
+          وجهتك الأولى للتسوق الراقي — قطع منتقاة بعناية فائقة لعشّاق التميّز.
+        </p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="إنستغرام">📸</a>
+        <a href="#" aria-label="إكس">𝕏</a>
+        <a href="#" aria-label="واتساب">💬</a>
+        <a href="#" aria-label="تيك توك">🎵</a>
+      </div>
+    </div>
+    <p class="copyright">© ٢٠٢٦ LUXE Store — جميع الحقوق محفوظة. صُنع بشغف للفخامة ✦</p>
+  </footer>
+
+  <!-- ================= درج السلة ================= -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="سلة التسوق">
+    <div class="drawer-head">
+      <h3>🛒 سلة التسوق</h3>
+      <button class="close-x" id="closeCart" aria-label="إغلاق">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="total-row"><span>المجموع الفرعي</span><span id="subTotal">0 ر.س</span></div>
+      <div class="total-row"><span>الشحن</span><span id="shipping">مجانية ✨</span></div>
+      <div class="total-row grand"><span>الإجمالي</span><b id="grandTotal">0 ر.س</b></div>
+      <button class="btn btn-gold checkout-btn" id="checkoutBtn">إتمام الشراء ✦</button>
+    </div>
+  </aside>
+
+  <!-- ================= مودال الدفع ================= -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <span></span>
+        <button class="close-x" id="closeModal" aria-label="إغلاق">✕</button>
+      </div>
+      <h3>الدفع الآمن</h3>
+      <p class="mini">🔒 معاملتك محمية بتشفير SSL — الإجمالي: <b id="payTotal" style="color:var(--gold-2)"></b></p>
+
+      <form id="payForm">
+        <div class="field">
+          <label>الاسم على البطاقة</label>
+          <input type="text" id="payerName" placeholder="مثال: أحمد الذهبي" autocomplete="name">
         </div>
-        <nav class="nav-links">
-            <a href="#">الرئيسية</a>
-            <a href="#">الألعاب</a>
-            <a href="#">المتجر كود</a>
-            <a href="#">المنتدى</a>
-        </nav>
-    </header>
-
-    <!-- الحاوية الرئيسية -->
-    <main class="main-container">
-        
-        <!-- لوحة الترحيب الإعلانية -->
-        <div class="banner-box">
-            <h1>مرحباً بك في عالم BRICKO!</h1>
-            <p>أعد اكتشاف المتعة الكلاسيكية، مكعبات البناء، والمغامرة الجماعية الأصلية بدون قيود مع الأصدقاء.</p>
+        <div class="field">
+          <label>رقم البطاقة</label>
+          <input type="text" id="cardNum" placeholder="0000 0000 0000 0000" inputmode="numeric" maxlength="19">
         </div>
-
-        <!-- قسم استعراض اللعبة والتحميل المباشر -->
-        <div class="download-section">
-            <div class="client-preview">
-                <!-- يستدعي صورة المغامرة الكلاسيكية التي وضعتها في مجلد الصور -->
-                <img src="img/card-bg.png" alt="BRICKO Gameplay Preview">
-            </div>
-            
-            <div class="download-info">
-                <h2>حمل مشغل اللعبة والعب الآن!</h2>
-                <p>قم بتحميل العميل الخاص بـ BRICKO مجاناً. العميل خفيف جداً، آمن تماماً، ومصمم ليعمل بأعلى كفاءة وسرعة استجابة من داخل سوريا وبدون الحاجة لتشغيل أي برامج بروكسي أو VPN مجهولة.</p>
-                
-                <!-- زر التحميل المباشر يرتبط فوراً بملفك الخارجي -->
-                <a href="ضع_رابط_ميديافاير_او_ميجا_المباشر_هنا" class="btn-download">تحميل المشغل (Client)</a>
-            </div>
+        <div class="field-row">
+          <div class="field">
+            <label>تاريخ الانتهاء</label>
+            <input type="text" id="cardExp" placeholder="MM/YY" inputmode="numeric" maxlength="5">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="password" id="cardCvv" placeholder="•••" inputmode="numeric" maxlength="4">
+          </div>
         </div>
+        <button type="submit" class="btn btn-gold" id="payBtn" style="width:100%;margin-top:8px;">ادفع الآن ✦</button>
+      </form>
 
-        <!-- التذييل السفلي وحماية الملكية الفكرية والحقوق -->
-        <footer class="roblox-footer">
-            <p>© 2026 BRICKO. جميع الحقوق محفوظة لمالك السيرفر.</p>
-            <p>هذا الموقع عبارة عن منصة محاكاة ترفيهية مستقلة تم إنشاؤها وتعديلها لأغراض ترفيهية. نحن لا نتبع لشركة رـوـبـلـوـكـس الرسمية ولا نستخدم أياً من خوادمهم الرقمية.</p>
-        </footer>
+      <div class="success-view" id="successView" style="display:none;">
+        <div class="check-circle">
+          <svg viewBox="0 0 52 52"><path d="M14 27 L23 36 L38 16"/></svg>
+        </div>
+        <h3 style="color:var(--ok);">تم الدفع بنجاح! 🎉</h3>
+        <p class="mini">شكراً لثقتك بـ LUXE. ستصلك قطعتك الفاخرة<br>بالتغليف الملكي خلال ٤٨ ساعة.</p>
+        <button class="btn btn-gold" id="continueShop" style="width:100%;">متابعة التسوق</button>
+      </div>
+    </div>
+  </div>
 
-    </main>
+  <!-- الإشعارات + زر الأعلى -->
+  <div id="toasts"></div>
+  <button id="toTop" aria-label="العودة للأعلى">↑</button>
 
+  <script src="app.js"></script>
 </body>
 </html>
